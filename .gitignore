@@ -1,0 +1,27 @@
+/target/
+
+# User-supplied copyrighted or private inputs
+/assets/
+/translation/
+/translations/
+/roms/
+
+# Generated outputs
+/out/
+*.gg
+*.sms
+*.bps
+*.ips
+*.sav
+*.state*
+*.gearsystem
+
+# Private analysis and legacy tooling
+/docs/
+/qa_screenshot/
+/scripts/
+/madouaggtools/
+/.emucap/
+/.claude/
+**/.DS_Store
+*.log

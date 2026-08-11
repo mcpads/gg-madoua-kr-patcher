@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = [
+    ".",
+    "crates/gg-sms",
+]
+
+[package]
+name = "madoua_kr"
+version = "0.1.0"
+edition = "2024"
+description = "Game Gear 마도물어 A(Sorcery Saga A) 한글 패치 빌드 도구"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+encoding_rs = "0.8"
+fontdue = "0.9"
+png = "0.18"
+crc32fast = "1"
+md-5 = "0.10"
+gg-sms = { path = "crates/gg-sms" }
+retro-z80 = { package = "z80", git = "https://github.com/mcpads/retro-typed-isa.git", rev = "9b31c628465cb83a633445de7d39e985be184cb7" }
+
+[dev-dependencies]
+proptest = "1"
+tempfile = "3"
